@@ -16,23 +16,23 @@ public class DB extends Thread {
 	public DB(String strt) {
 		try {
 			Class.forName("org.gjt.mm.mysql.Driver");
-			System.out.println("µå¶óÀÌ¹ö ¿¬°á ¼º°ø");
+			System.out.println("ë“œë¼ì´ë²„ ì—°ê²° ì„±ê³µ");
 		} catch (Exception e) {
-			System.err.println("¿¬°á ½ÇÆĞ");
+			System.err.println("ì—°ê²° ì‹¤íŒ¨");
 		}
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		
-		String url = "jdbc:mysql://127.0.0.1:3306/wemos";
-		String id = "root";
-		String pwd = "abcd1234";
+		String url = "jdbc:mysql://";
+		String id = "";
+		String pwd = "";
 		String query = null;
 		amain.ctnum ++;
 		try {
 			conn = DriverManager.getConnection(url, id, pwd);
-			System.out.println("url ¿¬°á ¼º°ø");
+			System.out.println("url ì—°ê²° ì„±ê³µ");
 		} catch (Exception e) {
-			System.err.println("url ¿¬°á ½ÇÆĞ");
+			System.err.println("url ì—°ê²° ì‹¤íŒ¨");
 		}
 			query = "insert into w1 values(?,?);";
 			
@@ -45,7 +45,7 @@ public class DB extends Thread {
 				run();
 				pstmt.close();
 			} catch (Exception e) {
-				System.err.println("¤Ç¤·");
+				
 			}
 	}
 }
