@@ -35,9 +35,9 @@ public class Android extends Thread {
 				Connection conn = null;
 				PreparedStatement pstmt = null;
 
-				String url = "jdbc:mysql://127.0.0.1:3306/wemos";
-				String id = "root";
-				String pwd = "abcd1234";
+				String url = "jdbc:mysql://";
+				String id = "";
+				String pwd = "";
 				String query = null;
 				conn = DriverManager.getConnection(url, id, pwd);
 				query = "select * from w1 where ctnum = ?";
