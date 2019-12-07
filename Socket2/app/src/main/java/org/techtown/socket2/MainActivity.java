@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         Button_send = (Button)findViewById(R.id.Button_send);
         threadList = new LinkedList<MainActivity.SocketClient>(); //메인 엑티비티클래스에 소켓 클라이언트는 ip와 포트번호를 가지고있는데 그걸 연결리스트로
         mvib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
-        ip_EditText.setText("192.168.0.1");
+        ip_EditText.setText("ip number");
         msghandler = new Handler(){
             @Override
             public void handleMessage(Message hdmsg) {
