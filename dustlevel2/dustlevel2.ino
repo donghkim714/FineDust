@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
-const char *ssid = "AndroidHotspot4788";
-const char *password = "11111111";
-const char *host = "192.168.43.70";
+const char *ssid = "ssid";
+const char *password = "password";
+const char *host = "ip number";
 
 int Vo = A0;
 int V_LED = 2;
